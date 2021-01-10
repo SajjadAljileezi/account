@@ -3,6 +3,11 @@
 
 // Variables
 @import 'variables';
+@import "nav";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}

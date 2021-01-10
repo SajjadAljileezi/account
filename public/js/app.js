@@ -1956,9 +1956,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Nav.vue"
 });
@@ -37588,10 +37585,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "nav",
-      { staticClass: "navbar navbar-expand-md navbar-dark fixed-top bg-dark" },
+      {
+        staticClass:
+          "navbar navbar-expand-md navbar-dark fixed-top nav-shadow bg-dark"
+      },
       [
         _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-          _vm._v("Fixed navbar")
+          _vm._v("Realtor Media ")
         ]),
         _vm._v(" "),
         _c(
@@ -37617,10 +37617,10 @@ var staticRenderFns = [
             attrs: { id: "navbarCollapse" }
           },
           [
-            _c("ul", { staticClass: "navbar-nav mr-auto" }, [
+            _c("ul", { staticClass: "navbar-nav ml-auto" }, [
               _c("li", { staticClass: "nav-item active" }, [
                 _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                  _vm._v("Home "),
+                  _vm._v("HOME "),
                   _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
                 ])
               ]),
@@ -37638,26 +37638,6 @@ var staticRenderFns = [
                   [_vm._v("Disabled")]
                 )
               ])
-            ]),
-            _vm._v(" "),
-            _c("form", { staticClass: "form-inline mt-2 mt-md-0" }, [
-              _c("input", {
-                staticClass: "form-control mr-sm-2",
-                attrs: {
-                  type: "text",
-                  placeholder: "Search",
-                  "aria-label": "Search"
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-outline-success my-2 my-sm-0",
-                  attrs: { type: "submit" }
-                },
-                [_vm._v("Search")]
-              )
             ])
           ]
         )
