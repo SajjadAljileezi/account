@@ -16,14 +16,13 @@ class DominoController extends Controller
     public function index()
     {
 
-//        $userid= 4;
-//           $domino= Domino::all();
-//          $domino->sum(2);
-        $columns = Domino::all();
-        // $balance = Domino::table()->sum('4');
-//          $amount = Domino::select(DB::raw('sum($userid * id) as total'))->get();
+        $x = Domino::inRandomOrder()->limit(7)->chunk(7, function ($users) {
+            foreach ($users as $user) {
+                echo $user;
+            }
+        });
 
-        return($columns);
+        return($x);
     }
 
     /**
