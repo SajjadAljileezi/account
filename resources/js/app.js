@@ -12,6 +12,7 @@ Vue.use(VueRouter)
 
 const routes = [
     { path: '/', component: require('./components/HomeComponent.vue').default},
+    { path: '/room', component: require('./components/Room.vue').default},
 
 ]
 

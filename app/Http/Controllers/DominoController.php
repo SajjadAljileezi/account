@@ -15,14 +15,9 @@ class DominoController extends Controller
      */
     public function index()
     {
-
-        $x = Domino::inRandomOrder()->limit(7)->chunk(7, function ($users) {
-            foreach ($users as $user) {
-                echo $user;
-            }
-        });
-
-        return($x);
+        $x = Domino::inRandomOrder()->get();
+        $s= collect($x)->chunk(7);
+        return ($s);
     }
 
     /**
